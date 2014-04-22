@@ -21,9 +21,12 @@ private slots:
   void on_pushButton_start_clicked();
   void on_pushButton_folder_clicked();
 
+  void on_pushButton_clear_clicked();
+
 private:
   Ui::MainWindow *ui;
   QProcess* proc ;
+  QString history;
 
 friend class PythonServer;
 };
